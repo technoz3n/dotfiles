@@ -5,8 +5,8 @@ After=network.target
 
 # please for the love of god change the directories here if you want to use this
 [Service]
-WorkingDirectory=/home/technozen/scripts/
-ExecStart=/usr/bin/python /home/technozen/scripts/status.py
+WorkingDirectory=%h/scripts/
+ExecStart=/usr/bin/python %h/scripts/status.py
 Restart=always
 StandardOutput=journal
 StandardError=journal
